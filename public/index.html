@@ -3,95 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <title>DarkService</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="/style.css">
 </head>
-  <script>
-  const popup = document.getElementById('popup');
-  const btn = document.querySelector('.order-btn');
-  const close = document.getElementById('closePopup');
-
-  btn.onclick = () => popup.classList.remove('hidden');
-  close.onclick = () => popup.classList.add('hidden');
-</script>
-
 <body>
 
-  <div class="hero">
-    <h1 class="logo">DarkService</h1>
-    <p class="subtitle">
-      Ремонт и продажа техники Apple, Android и ПК
-    </p>
+<header class="hero">
+  <h1>DarkService</h1>
+  <p>Ремонт и продажа техники Apple, Android и ПК</p>
+  <button id="openForm">Заказать ремонт</button>
+</header>
 
-    <button class="btn" onclick="openPopup()">Заказать ремонт</button>
-    <section class="steps">
+<section class="steps">
   <h2>Как мы работаем</h2>
-
   <div class="steps-grid">
-    <div class="step">
-      <span>1</span>
-      <p>Оставляете заявку</p>
-    </div>
-
-    <div class="step">
-      <span>2</span>
-      <p>Мы связываемся с вами</p>
-    </div>
-
-    <div class="step">
-      <span>3</span>
-      <p>Ремонтируем устройство</p>
-    </div>
-
-    <div class="step">
-      <span>4</span>
-      <p>Вы получаете результат</p>
-    </div>
+    <div class="step">1<br><span>Оставляете заявку</span></div>
+    <div class="step">2<br><span>Мы связываемся</span></div>
+    <div class="step">3<br><span>Ремонтируем</span></div>
+    <div class="step">4<br><span>Вы получаете результат</span></div>
   </div>
 </section>
 
+<div class="popup hidden" id="popup">
+  <div class="popup-content">
+    <button class="close" id="closeForm">×</button>
+    <h3>Заявка на ремонт</h3>
+    <input placeholder="Имя">
+    <input placeholder="Телефон">
+    <input placeholder="Устройство">
+    <textarea placeholder="Описание проблемы"></textarea>
+    <button>Отправить</button>
   </div>
-
-  <!-- POPUP -->
-  <div class="popup hidden" id="popup">
-    <div class="popup-content">
-      <button class="close" onclick="closePopup()">✕</button>
-
-      <h2>Заявка на ремонт</h2>
-
-      <input type="text" placeholder="Имя">
-      <input type="text" placeholder="Телефон">
-      <input type="text" placeholder="Устройство">
-      <textarea placeholder="Описание проблемы"></textarea>
-
-      <button class="btn">Отправить</button>
-    </div>
-  </div>
+</div>
 
 <script>
-function openPopup() {
-  document.getElementById('popup').classList.remove('hidden');
-}
-function closePopup() {
-  document.getElementById('popup').classList.add('hidden');
-}
+  document.getElementById('openForm').onclick = () =>
+    document.getElementById('popup').classList.remove('hidden');
+
+  document.getElementById('closeForm').onclick = () =>
+    document.getElementById('popup').classList.add('hidden');
 </script>
 
 </body>
 </html>
-<div class="popup hidden" id="popup">
-  <div class="popup-content">
-    <button class="close" id="closePopup">×</button>
-
-    <h3>Заявка на ремонт</h3>
-
-    <input type="text" placeholder="Имя">
-    <input type="text" placeholder="Телефон">
-    <input type="text" placeholder="Устройство">
-    <textarea placeholder="Описание проблемы"></textarea>
-
-    <button class="send-btn">Отправить</button>
-  </div>
-</div>
