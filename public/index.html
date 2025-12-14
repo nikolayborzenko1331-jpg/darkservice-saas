@@ -3,40 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <title>DarkService</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
+  <div class="hero">
+    <h1 class="logo">DarkService</h1>
+    <p class="subtitle">
+      Ремонт и продажа техники Apple, Android и ПК
+    </p>
 
-  <h1>DarkService</h1>
-  <p>Ремонт и продажа техники Apple, Android и ПК</p>
-
-  <button onclick="openPopup()">Заказать ремонт</button>
+    <button class="btn" onclick="openPopup()">Заказать ремонт</button>
+  </div>
 
   <!-- POPUP -->
-  <div id="popup" class="popup hidden">
+  <div class="popup hidden" id="popup">
     <div class="popup-content">
-      <button class="close" onclick="closePopup()">×</button>
+      <button class="close" onclick="closePopup()">✕</button>
 
       <h2>Заявка на ремонт</h2>
 
-      <input placeholder="Имя">
-      <input placeholder="Телефон">
-      <input placeholder="Устройство">
+      <input type="text" placeholder="Имя">
+      <input type="text" placeholder="Телефон">
+      <input type="text" placeholder="Устройство">
       <textarea placeholder="Описание проблемы"></textarea>
 
-      <button>Отправить</button>
+      <button class="btn">Отправить</button>
     </div>
   </div>
 
-  <script>
-    function openPopup() {
-      document.getElementById('popup').classList.remove('hidden');
-    }
-    function closePopup() {
-      document.getElementById('popup').classList.add('hidden');
-    }
-  </script>
+<script>
+function openPopup() {
+  document.getElementById('popup').classList.remove('hidden');
+}
+function closePopup() {
+  document.getElementById('popup').classList.add('hidden');
+}
+</script>
 
 </body>
 </html>
