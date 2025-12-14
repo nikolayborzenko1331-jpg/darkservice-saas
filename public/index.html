@@ -1,19 +1,24 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <title>DarkService</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-</head>
 <body>
   <div class="hero">
     <h1>DarkService</h1>
     <p>Ремонт и продажа техники Apple, Android и ПК</p>
-
     <button onclick="openForm()">Заказать ремонт</button>
+  </div>
+
+  <!-- Popup -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <h2>Заявка на ремонт</h2>
+
+      <input id="name" placeholder="Имя" />
+      <input id="phone" placeholder="Телефон" />
+      <input id="device" placeholder="Устройство" />
+      <textarea id="problem" placeholder="Описание проблемы"></textarea>
+
+      <button onclick="sendRequest()">Отправить</button>
+      <button class="close" onclick="closeForm()">✕</button>
+    </div>
   </div>
 
   <script src="script.js"></script>
 </body>
-</html>
