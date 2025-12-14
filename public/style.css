@@ -117,3 +117,56 @@ body {
 .step p {
   font-size: 16px;
 }
+.popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.hidden {
+  display: none;
+}
+
+.popup-content {
+  background: #0b0b0f;
+  padding: 30px;
+  border: 2px solid #ff0033;
+  box-shadow: 0 0 30px #ff0033;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+}
+
+.popup-content input,
+.popup-content textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #000;
+  color: #fff;
+  border: 1px solid #ff0033;
+}
+
+.send-btn {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #ff0033;
+  color: #ff0033;
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #ff0033;
+  font-size: 20px;
+  cursor: pointer;
+}
