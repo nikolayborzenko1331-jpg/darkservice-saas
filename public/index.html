@@ -1,24 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>DarkService — ремонт техники</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ПОДКЛЮЧАЕМ СТИЛИ -->
+  <link rel="stylesheet" href="/style.css">
+</head>
 <body>
-  <div class="hero">
-    <h1>DarkService</h1>
-    <p>Ремонт и продажа техники Apple, Android и ПК</p>
-    <button onclick="openForm()">Заказать ремонт</button>
+
+  <main class="hero">
+    <h1 class="logo">DarkService</h1>
+    <p class="subtitle">
+      Ремонт и продажа техники Apple, Android и ПК
+    </p>
+
+    <button class="btn" onclick="openForm()">Заказать ремонт</button>
+  </main>
+
+  <!-- ФОРМА -->
+  <div id="form" class="modal hidden">
+    <h2>Заявка на ремонт</h2>
+    <input placeholder="Имя">
+    <input placeholder="Телефон">
+    <input placeholder="Устройство">
+    <textarea placeholder="Описание проблемы"></textarea>
+
+    <button class="btn">Отправить</button>
+    <button class="btn secondary" onclick="closeForm()">Закрыть</button>
   </div>
 
-  <!-- Popup -->
-  <div id="popup" class="popup hidden">
-    <div class="popup-content">
-      <h2>Заявка на ремонт</h2>
+  <script>
+    function openForm() {
+      document.getElementById("form").classList.remove("hidden");
+    }
+    function closeForm() {
+      document.getElementById("form").classList.add("hidden");
+    }
+  </script>
 
-      <input id="name" placeholder="Имя" />
-      <input id="phone" placeholder="Телефон" />
-      <input id="device" placeholder="Устройство" />
-      <textarea id="problem" placeholder="Описание проблемы"></textarea>
-
-      <button onclick="sendRequest()">Отправить</button>
-      <button class="close" onclick="closeForm()">✕</button>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
 </body>
+</html>
