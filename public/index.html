@@ -3,38 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <title>DarkService</title>
+
+  <!-- ВОТ ОНО -->
   <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
 
-  <main class="hero">
-    <h1 class="logo">DarkService</h1>
-    <p class="subtitle">
-      Ремонт и продажа техники Apple, Android и ПК
-    </p>
+  <h1>DarkService</h1>
+  <p>Ремонт и продажа техники Apple, Android и ПК</p>
 
-    <button class="btn" onclick="openForm()">Заказать ремонт</button>
-  </main>
+  <button onclick="openPopup()">Заказать ремонт</button>
 
-  <!-- ФОРМА -->
-  <div id="form" class="modal hidden">
-    <h2>Заявка на ремонт</h2>
-    <input placeholder="Имя">
-    <input placeholder="Телефон">
-    <input placeholder="Устройство">
-    <textarea placeholder="Описание проблемы"></textarea>
+  <!-- POPUP -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <button class="close" onclick="closePopup()">×</button>
 
-    <button class="btn">Отправить</button>
-    <button class="btn secondary" onclick="closeForm()">Закрыть</button>
+      <h2>Заявка на ремонт</h2>
+
+      <input placeholder="Имя">
+      <input placeholder="Телефон">
+      <input placeholder="Устройство">
+      <textarea placeholder="Описание проблемы"></textarea>
+
+      <button>Отправить</button>
+    </div>
   </div>
 
   <script>
-    function openForm() {
-      document.getElementById("form").classList.remove("hidden");
+    function openPopup() {
+      document.getElementById('popup').classList.remove('hidden');
     }
-    function closeForm() {
-      document.getElementById("form").classList.add("hidden");
+    function closePopup() {
+      document.getElementById('popup').classList.add('hidden');
     }
   </script>
 
