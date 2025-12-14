@@ -8,6 +8,15 @@
   <!-- CSS -->
   <link rel="stylesheet" href="/style.css">
 </head>
+  <script>
+  const popup = document.getElementById('popup');
+  const btn = document.querySelector('.order-btn');
+  const close = document.getElementById('closePopup');
+
+  btn.onclick = () => popup.classList.remove('hidden');
+  close.onclick = () => popup.classList.add('hidden');
+</script>
+
 <body>
 
   <div class="hero">
