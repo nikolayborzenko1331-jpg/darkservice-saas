@@ -4,15 +4,15 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// 🔥 ВАЖНО: подключаем public
+// Подключаем папку public
 app.use(express.static(path.join(__dirname, '../public')));
 
-// 🔥 Главная страница
+// Главная
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
-// 🔥 Проверка, что сервер жив
+// Health check
 app.get('/health', (req, res) => {
   res.send('OK');
 });
