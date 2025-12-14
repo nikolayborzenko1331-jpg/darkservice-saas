@@ -170,3 +170,15 @@ body {
   font-size: 20px;
   cursor: pointer;
 }
+body {
+  background: radial-gradient(circle at center, #200000, #000);
+}
+
+.order-btn {
+  transition: 0.3s;
+}
+
+.order-btn:hover {
+  box-shadow: 0 0 30px #ff0033;
+  transform: scale(1.05);
+}
