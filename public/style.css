@@ -44,15 +44,11 @@ body {
 
 .hero {
   min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  padding-top: 140px; /* ← ВАЖНО */
+  display: flex;
   align-items: center;
-  padding: 120px 60px;
-  background:
-    radial-gradient(circle at 20% 30%, rgba(255, 50, 150, 0.25), transparent 60%),
-    radial-gradient(circle at 80% 70%, rgba(120, 60, 255, 0.25), transparent 60%),
-    #050008;
 }
+
 
 /* LEFT */
 
