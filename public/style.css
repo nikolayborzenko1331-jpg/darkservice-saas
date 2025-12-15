@@ -190,3 +190,47 @@ body {
   color: #ccc;
   font-size: 15px;
 }
+/* ===== REPAIR FORM ===== */
+
+.repair-form {
+  max-width: 500px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.repair-form input,
+.repair-form select,
+.repair-form textarea {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255, 46, 122, 0.3);
+  border-radius: 14px;
+  padding: 14px 18px;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.repair-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+.repair-form input:focus,
+.repair-form select:focus,
+.repair-form textarea:focus {
+  border-color: #ff2e7a;
+  box-shadow: 0 0 20px rgba(255, 46, 122, 0.4);
+}
+
+.repair-form select {
+  appearance: none;
+  cursor: pointer;
+}
+
+.repair-form button {
+  margin-top: 10px;
+  align-self: flex-start;
+}
