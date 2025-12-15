@@ -97,6 +97,12 @@ html, body {
   filter: blur(40px);
 }
 
+.hero h1 {
+  color: #ff3d6a;
+  text-shadow:
+    0 0 12px rgba(255, 60, 120, 0.6),
+    0 0 30px rgba(160, 70, 255, 0.4);
+}
 
 
 /* ===== CONTENT ===== */
