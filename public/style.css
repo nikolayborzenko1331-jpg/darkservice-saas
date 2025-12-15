@@ -336,3 +336,6 @@ body {
 main {
   padding-top: 140px;
 }
+.header-space {
+  height: 120px;
+}
