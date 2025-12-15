@@ -395,3 +395,26 @@ main {
   line-height: 1.7;
   color: #d8caff;
 }
+.catalog-preview {
+  padding: 120px 20px;
+}
+
+.catalog-preview h2 {
+  margin-bottom: 40px;
+  color: #e9d5ff;
+}
+
+.catalog-item {
+  max-width: 320px;
+  padding: 28px;
+  border-radius: 20px;
+  background: rgba(168, 85, 247, 0.06);
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.3);
+}
+
+.catalog-item span {
+  color: #a855f7;
+  font-size: 14px;
+  opacity: 0.7;
+}
