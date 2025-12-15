@@ -65,10 +65,20 @@
 </section>
 
 <!-- РЕМОНТ -->
-<section id="repair" class="section">
+<section id="repair" class="section dark">
   <h2>Заказать ремонт</h2>
-  <p>Форма будет на следующем шаге</p>
-</section>
 
-</body>
-</html>
+  <form class="repair-form">
+    <input type="text" placeholder="Ваше имя" required>
+    <input type="tel" placeholder="Телефон или Telegram" required>
+    <select required>
+      <option value="">Тип устройства</option>
+      <option>Apple</option>
+      <option>Android</option>
+      <option>PC / Ноутбук</option>
+    </select>
+    <textarea placeholder="Опишите проблему" required></textarea>
+
+    <button type="submit" class="btn">Отправить заявку</button>
+  </form>
+</section>
