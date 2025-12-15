@@ -118,20 +118,23 @@ body {
 
 .btn {
   display: inline-block;
-  padding: 14px 34px;
-  border-radius: 30px;
-  background: transparent;
-  border: 1px solid #ff2e7a;
-  color: #ff2e7a;
+  padding: 14px 28px;
+  border-radius: 16px;
+  border: 1px solid #a855f7;
+  color: #fff;
   text-decoration: none;
-  font-size: 14px;
-  box-shadow: 0 0 20px rgba(255, 60, 140, 0.4);
+  font-weight: 500;
+  background: transparent;
+  transition: 0.3s;
+  box-shadow: 0 0 20px rgba(168,85,247,0.15);
 }
 
 .btn:hover {
-  background: #ff2e7a;
-  color: #000;
+  background: rgba(168,85,247,0.15);
+  box-shadow: 0 0 30px rgba(168,85,247,0.6);
+  transform: translateY(-2px);
 }
+
 
 /* ===== SECTIONS ===== */
 
