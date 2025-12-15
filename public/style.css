@@ -69,18 +69,13 @@ html, body {
   position: relative;
 }
 
-.hero-image::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(138, 43, 226, 0.45),
-    rgba(30, 0, 50, 0.85)
-  );
-  mix-blend-mode: screen;
-  pointer-events: none;
-  border-radius: 16px;
+.hero-image img {
+  max-width: 420px;
+  border-radius: 18px;
+  filter: brightness(0.8) contrast(1.1);
+  box-shadow:
+    0 0 40px rgba(170, 80, 255, 0.25),
+    0 0 120px rgba(120, 60, 200, 0.15);
 }
 
 .hero-image img {
