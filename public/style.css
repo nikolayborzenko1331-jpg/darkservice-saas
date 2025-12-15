@@ -39,14 +39,15 @@ body {
 .top nav a:hover {
   color: #fff;
 }
+header {
+  height: 80px;
+}
 
 /* ===== HERO ===== */
 
 .hero {
   min-height: 100vh;
-  padding-top: 140px; /* ← ВАЖНО */
-  display: flex;
-  align-items: center;
+  padding-top: 140px;
 }
 
 
