@@ -1,52 +1,33 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DarkService</title>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>DarkService</h1>
-    <p>Ремонт и продажа техники Apple, Android и ПК</p>
-    <button onclick="openPopup()">Заказать ремонт</button>
-  </section>
+<header class="header">
+  <div class="logo">DarkService</div>
+  <nav>
+    <a href="#">Каталог</a>
+    <a href="#">Заказать ремонт</a>
+    <a href="#">О нас</a>
+    <a class="support" href="#">Тех поддержка</a>
+  </nav>
+</header>
 
-  <!-- STEPS -->
-  <section class="steps">
-    <h2>Как мы работаем</h2>
-
-    <div class="steps-grid">
-      <div class="step">1<span>Оставляете заявку</span></div>
-      <div class="step">2<span>Мы связываемся с вами</span></div>
-      <div class="step">3<span>Ремонтируем устройство</span></div>
-      <div class="step">4<span>Вы получаете результат</span></div>
-    </div>
-  </section>
-
-  <!-- POPUP -->
-  <div class="popup hidden" id="popup">
-    <div class="popup-content">
-      <button class="close" onclick="closePopup()">×</button>
-      <h3>Заявка на ремонт</h3>
-      <input placeholder="Имя">
-      <input placeholder="Телефон">
-      <input placeholder="Устройство">
-      <textarea placeholder="Описание проблемы"></textarea>
-      <button>Отправить</button>
-    </div>
+<section class="hero">
+  <div class="hero-content">
+    <h1>DarkService —<br>сервис и магазин</h1>
+    <p>
+      Ремонт и продажа техники <b>Apple</b>, Android и ПК<br>
+      Прозрачная диагностика, поддержка в Telegram.
+    </p>
+    <button>Смотреть каталог</button>
   </div>
-
-  <script>
-    function openPopup() {
-      document.getElementById('popup').classList.remove('hidden');
-    }
-    function closePopup() {
-      document.getElementById('popup').classList.add('hidden');
-    }
-  </script>
+</section>
 
 </body>
 </html>
