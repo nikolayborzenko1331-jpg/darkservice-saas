@@ -1,67 +1,87 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Каталог — DarkService</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>Каталог — DarkService</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Подключаем ОБЩИЙ стиль -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="catalog-page">
 
-<header class="header">
-  <div class="logo">DarkService</div>
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="logo">DarkService</div>
 
-  <nav class="nav">
-    <a href="index.html">Главная</a>
-    <a href="catalog.html">Каталог</a>
-    <a href="#about">О нас</a>
-    <a href="repair.html">Заказать ремонт</a>
-  </nav>
-</header>
+        <nav class="nav">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html" class="active">Каталог</a>
+            <a href="about.html">О нас</a>
+            <a href="repair.html">Заказать ремонт</a>
+        </nav>
+    </header>
 
+    <!-- ===== MAIN ===== -->
+    <main class="catalog-wrapper">
 
-<section class="section dark">
-  <div class="container">
-    <h1 class="animate">Каталог устройств</h1>
-    <p class="subtitle animate delay-1">
-      Продажа и ремонт техники Apple, Android и ПК
-    </p>
+        <h1 class="catalog-title">Каталог устройств</h1>
 
-    <div class="catalog-grid">
+        <div class="catalog-grid">
 
-      <div class="catalog-item animate delay-1">
-        <h3>iPhone 13</h3>
-        <p>128 GB</p>
-        <span class="status">Нет в наличии</span>
-      </div>
+            <!-- Apple -->
+            <div class="catalog-card">
+                <h2>Apple</h2>
+                <p>iPhone, iPad, MacBook</p>
 
-      <div class="catalog-item animate delay-2">
-        <h3>Samsung Galaxy S22</h3>
-        <p>256 GB</p>
-        <span class="status">Нет в наличии</span>
-      </div>
+                <div class="product">
+                    <span>iPhone 13 · 128 GB</span>
+                    <span class="status out">Нет в наличии</span>
+                </div>
 
-      <div class="catalog-item animate delay-3">
-        <h3>MacBook Air M1</h3>
-        <p>8 / 256</p>
-        <span class="status">Нет в наличии</span>
-      </div>
+                <div class="product">
+                    <span>MacBook Air M1</span>
+                    <span class="status out">Нет в наличии</span>
+                </div>
+            </div>
 
-      <div class="catalog-item animate delay-1">
-        <h3>Игровой ПК</h3>
-        <p>Индивидуальная сборка</p>
-        <span class="status">Нет в наличии</span>
-      </div>
+            <!-- Android -->
+            <div class="catalog-card">
+                <h2>Android</h2>
+                <p>Samsung, Xiaomi, Honor</p>
 
-    </div>
-  </div>
-</section>
+                <div class="product">
+                    <span>Samsung Galaxy S22</span>
+                    <span class="status out">Нет в наличии</span>
+                </div>
 
-<footer>
-  <div class="container">
-    <p>© 2025 DarkService. Все права защищены.</p>
-  </div>
-</footer>
+                <div class="product">
+                    <span>Xiaomi Redmi Note 12</span>
+                    <span class="status out">Нет в наличии</span>
+                </div>
+            </div>
+
+            <!-- PC -->
+            <div class="catalog-card">
+                <h2>PC</h2>
+                <p>Компьютеры и ноутбуки</p>
+
+                <div class="product">
+                    <span>Игровой ПК</span>
+                    <span class="status out">Нет в наличии</span>
+                </div>
+
+                <div class="product">
+                    <span>Ноутбук для работы</span>
+                    <span class="status out">Нет в наличии</span>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="index.html" class="back-btn">← Вернуться на главную</a>
+
+    </main>
 
 </body>
 </html>
