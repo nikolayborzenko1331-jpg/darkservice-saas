@@ -51,24 +51,27 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 120px 80px 40px;
-  gap: 60px;
+  padding: 160px 80px;
+  background:
+    radial-gradient(circle at left top, rgba(120,0,0,0.6), transparent 60%),
+    linear-gradient(90deg, #000 40%, #020202 100%);
 }
 
 .hero-text {
-  max-width: 520px;
+  max-width: 560px;
 }
 
 .hero h1 {
-  font-size: 64px;
-  line-height: 1.1;
-  margin: 0;
-  color: #ff0033;
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 1.05;
+  color: #ff002b;
   text-shadow:
-    0 0 10px rgba(255,0,51,0.7),
-    0 0 30px rgba(255,0,51,0.5),
-    0 0 60px rgba(255,0,51,0.3);
+    0 0 15px rgba(255,0,43,0.8),
+    0 0 40px rgba(255,0,43,0.6),
+    0 0 80px rgba(255,0,43,0.3);
 }
+
 
 .hero p {
   margin-top: 24px;
