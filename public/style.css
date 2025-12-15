@@ -29,19 +29,22 @@ body {
   font-weight: bold;
 }
 
-.top nav a {
-  margin-left: 25px;
-  color: #ccc;
+nav a {
+  margin-left: 24px;
+  padding: 8px 18px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  color: #e9d5ff;
   text-decoration: none;
-  font-size: 14px;
+  transition: 0.3s;
 }
 
-.top nav a:hover {
-  color: #fff;
+nav a:hover {
+  border-color: #a855f7;
+  background: rgba(168, 85, 247, 0.15);
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
 }
-header {
-  height: 80px;
-}
+
 
 /* ===== HERO ===== */
 
