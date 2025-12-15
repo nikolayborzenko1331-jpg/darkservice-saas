@@ -61,56 +61,59 @@ nav a:hover {
 }
 
 /* ===== HERO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background: #050008;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* HERO */
 .hero {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-
-  background:
-    radial-gradient(circle at center, rgba(140, 80, 255, 0.15), transparent 60%),
-    linear-gradient(135deg, #050008, #0b0015 60%, #020005);
 }
 
 .hero-content {
-  max-width: 900px;
-  padding: 20px;
+  text-align: center;
 }
 
 /* ЗАГОЛОВОК */
 .hero h1 {
   font-size: 64px;
-  font-weight: 800;
   color: #c77dff;
-  line-height: 1.1;
-  margin-bottom: 24px;
-
-  text-shadow:
-    0 0 20px rgba(199, 125, 255, 0.6),
-    0 0 40px rgba(140, 80, 255, 0.4);
+  text-shadow: 0 0 25px rgba(199,125,255,0.7);
 }
 
 .hero h1 span {
   display: block;
-  color: #b96cff;
 }
 
 /* ОПИСАНИЕ */
 .hero-text {
+  margin-top: 20px;
   font-size: 18px;
   color: #e6dcff;
-  line-height: 1.6;
-  margin-bottom: 36px;
-
-  text-shadow:
-    0 0 10px rgba(199, 125, 255, 0.25);
 }
 
-.hero-text b {
-  color: #ffffff;
+/* КНОПКА */
+.hero-btn {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 14px 30px;
+  border: 1px solid #c77dff;
+  border-radius: 12px;
+  color: white;
+  text-decoration: none;
 }
+
 
 /* КНОПКА */
 .hero-btn {
