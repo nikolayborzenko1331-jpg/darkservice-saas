@@ -114,3 +114,46 @@ body {
   filter: blur(80px);
   z-index: 1;
 }
+/* ===== BUTTON LINK ===== */
+
+.btn {
+  display: inline-block;
+  padding: 14px 34px;
+  border-radius: 30px;
+  background: transparent;
+  border: 1px solid #ff2e7a;
+  color: #ff2e7a;
+  text-decoration: none;
+  font-size: 14px;
+  box-shadow: 0 0 20px rgba(255, 60, 140, 0.4);
+}
+
+.btn:hover {
+  background: #ff2e7a;
+  color: #000;
+}
+
+/* ===== SECTIONS ===== */
+
+.section {
+  padding: 120px 60px;
+  background: #070010;
+}
+
+.section.dark {
+  background: #050008;
+}
+
+.section h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #ff2e7a;
+  text-shadow: 0 0 20px rgba(255, 60, 140, 0.6);
+}
+
+.section p {
+  font-size: 16px;
+  color: #ddd;
+  max-width: 600px;
+  line-height: 1.6;
+}
