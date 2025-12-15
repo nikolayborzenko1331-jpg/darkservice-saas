@@ -1,138 +1,32 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>DarkService</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body style="
-  margin:0;
-  height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:#050008;
-  font-family:Arial, sans-serif;
-">
+<header class="header">
+  <div class="logo">DarkService</div>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="catalog.html">Каталог</a>
+    <a href="#about">О нас</a>
+    <a href="repair.html">Заказать ремонт</a>
+  </nav>
+</header>
 
-  <div style="text-align:center;">
-    <h1 style="
-      font-size:64px;
-      color:#c77dff;
-      text-shadow:0 0 30px rgba(199,125,255,0.8);
-      margin-bottom:20px;
-    ">
-      DarkService —<br>сервис и магазин
-    </h1>
+<section class="main">
+  <h1>DarkService —<br>сервис и магазин</h1>
 
-    <p style="
-      color:#e6dcff;
-      font-size:18px;
-      line-height:1.6;
-      margin-bottom:30px;
-    ">
-      Ремонт и продажа техники Apple, Android и ПК<br>
-      Прозрачная диагностика, поддержка в Telegram
-    </p>
+  <p>
+    Ремонт и продажа техники Apple, Android и ПК<br>
+    Прозрачная диагностика и поддержка в Telegram
+  </p>
 
-    <a href="catalog.html" style="
-      display:inline-block;
-      padding:14px 32px;
-      border:1px solid #c77dff;
-      border-radius:12px;
-      color:white;
-      text-decoration:none;
-      font-size:16px;
-    ">
-      Смотреть каталог
-    </a>
-  </div>
+  <a class="button" href="catalog.html">Смотреть каталог</a>
+</section>
 
 </body>
 </html>
-
-
-
-
-<p class="animate delay-2">
-  Ремонт и продажа техники <b>Apple</b>, Android и ПК<br>
-  Прозрачная диагностика, поддержка в Telegram.
-</p>
-
-<a href="catalog.html" class="btn">Смотреть каталог</a>
-
-<section id="catalog-preview" class="catalog-preview">
-  <h2>Каталог</h2>
-
-  <div class="catalog-item">
-    <h3>iPhone 13</h3>
-    <p>128 GB</p>
-    <span>Нет в наличии</span>
-  </div>
-</section>
-
-<!-- КАТАЛОГ -->
-<section id="catalog" class="section">
-  <h2>Каталог устройств</h2>
-
-  <div class="cards">
-    <div class="card">
-      <h3>Apple</h3>
-      <p>iPhone, iPad, MacBook</p>
-    </div>
-
-    <div class="card">
-      <h3>Android</h3>
-      <p>Samsung, Xiaomi, Honor</p>
-    </div>
-
-    <div class="card">
-      <h3>PC</h3>
-      <p>Компьютеры и ноутбуки</p>
-    </div>
-  </div>
-</section>
-
-<!-- О НАС -->
-<section id="about" class="about-section">
-  <h2>О нас</h2>
-
-  <div class="about-box">
-    <p>
-      <b>DarkService</b> — сервис и магазин по ремонту и продаже техники.
-      Мы работаем с устройствами <b>Apple</b>, Android и ПК.
-      Предлагаем честную диагностику, прозрачные цены
-      и поддержку клиентов через Telegram.
-    </p>
-  </div>
-</section>
-
-
-
-<!-- РЕМОНТ -->
-<section id="repair" class="section dark">
-  <h2>Заказать ремонт</h2>
-
-  <form class="repair-form">
-    <input type="text" placeholder="Ваше имя" required>
-    <input type="tel" placeholder="Телефон или Telegram" required>
-    <select required>
-      <option value="">Тип устройства</option>
-      <option>Apple</option>
-      <option>Android</option>
-      <option>PC / Ноутбук</option>
-    </select>
-    <textarea placeholder="Опишите проблему" required></textarea>
-
-    <button type="submit" class="btn">Отправить заявку</button>
-  </form>
-</section>
-<section id="catalog" class="section dark">
-  <h2 class="animate">Каталог</h2>
-
-  <div class="catalog-card animate delay-1">
-    <h3>iPhone 13</h3>
-    <p class="status">Нет в наличии</p>
-  </div>
-</section>
