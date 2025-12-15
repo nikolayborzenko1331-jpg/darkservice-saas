@@ -157,3 +157,36 @@ body {
   max-width: 600px;
   line-height: 1.6;
 }
+/* ===== CATALOG CARDS ===== */
+
+.cards {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.card {
+  flex: 1;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255, 46, 122, 0.2);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 0 40px rgba(255, 46, 122, 0.15);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 60px rgba(255, 46, 122, 0.4);
+}
+
+.card h3 {
+  font-size: 28px;
+  color: #ff2e7a;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #ccc;
+  font-size: 15px;
+}
