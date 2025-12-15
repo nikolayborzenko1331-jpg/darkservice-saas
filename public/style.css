@@ -75,12 +75,13 @@ body {
 
 /* HERO */
 .hero {
-  min-height: calc(100vh - 80px); /* 80px — высота верхнего меню */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    min-height: 100vh;          /* ВСЯ высота экрана */
+    display: flex;
+    justify-content: center;    /* центр по вертикали */
+    align-items: center;        /* центр по горизонтали */
+    text-align: center;
 }
+
 
 .hero-content {
   text-align: center;
