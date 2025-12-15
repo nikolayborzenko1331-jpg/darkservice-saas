@@ -52,17 +52,6 @@ nav a:hover {
   min-height: 100vh;
   padding-top: 140px;
 }
-.hero-title {
-  font-size: 64px;
-}
-
-.hero-title span {
-  font-size: 56px;
-  opacity: 0.85;
-}
-.hero {
-  animation: fadeUp 1s ease-out forwards;
-}
 
 @keyframes fadeUp {
   from {
