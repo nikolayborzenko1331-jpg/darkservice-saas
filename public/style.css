@@ -75,10 +75,11 @@ body {
 
 /* HERO */
 .hero {
-  height: 100vh;
+  min-height: calc(100vh - 80px); /* 80px — высота верхнего меню */
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .hero-content {
