@@ -465,3 +465,26 @@ main {
     0 0 10px rgba(168, 85, 247, 0.6),
     0 0 20px rgba(236, 72, 153, 0.4);
 }
+.hero-title {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+
+  background: linear-gradient(
+    90deg,
+    #a855f7,
+    #ec4899
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 0 20px rgba(168, 85, 247, 0.6),
+    0 0 40px rgba(236, 72, 153, 0.4);
+}
+
+.hero-title span {
+  font-size: 56px;
+  display: block;
+}
